@@ -36,7 +36,7 @@
 
 		public function get_icon()
 		{
-			return 'fa fa-pencil';
+			return 'eicon-slider-push';
 		}
 
 		public function get_categories()
@@ -115,9 +115,10 @@
 			
 			$this->end_controls_section();
 
-			$this->start_controls_section('section_slidersettings_content',
+			$this->start_controls_section('section_slidersettings_behavior',
 				array(
-					'label' => __('Slider Settings', 'elementor-flickity-slider'),
+					'label' => __('Slider Settings: Behavior', 'elementor-flickity-slider'),
+					'tab' => Controls_Manager::TAB_CONTENT,
 				)
 			);
 			
@@ -274,6 +275,17 @@
 				)
 			);
 			
+			$this->end_controls_section();
+			
+			
+			$this->start_controls_section('section_slidersettings_setup',
+				array(
+					'label' => __('Slider Settings: Setup', 'elementor-flickity-slider'),
+					'tab' => Controls_Manager::TAB_CONTENT,
+				)
+			);
+
+			
 			$this->add_control('slider_setting_cellselector',
 				array(
 					'label' => __('Cell Selector', 'elementor-flickity-slider'),
@@ -318,6 +330,16 @@
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'true',
+				)
+			);
+			
+			$this->end_controls_section();
+			
+			
+			$this->start_controls_section('section_slidersettings_cellposition',
+				array(
+					'label' => __('Slider Settings: Cell Position', 'elementor-flickity-slider'),
+					'tab' => Controls_Manager::TAB_CONTENT,
 				)
 			);
 
@@ -378,6 +400,16 @@
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
+				)
+			);
+			
+			$this->end_controls_section();
+			
+			
+			$this->start_controls_section('section_slidersettings_ui',
+				array(
+					'label' => __('Slider Settings: UI', 'elementor-flickity-slider'),
+					'tab' => Controls_Manager::TAB_CONTENT,
 				)
 			);
 			
@@ -497,7 +529,12 @@
 					rightToLeft: <?php echo (wp_kses($settings['slider_setting_righttoleft'], array()) === 'true') ? 'true' : 'false'; ?>,
 					prevNextButtons: <?php echo (wp_kses($settings['slider_setting_prevnextbuttons'], array()) === 'true') ? 'true' : 'false'; ?>,
 					pageDots: <?php echo (wp_kses($settings['slider_setting_pagedots'], array()) === 'true') ? 'true' : 'false'; ?>,
-					//arrowShape: <?php echo (!empty(wp_kses($settings['slider_setting_arrowshape'], array()))) ? "'".wp_kses($settings['slider_setting_arrowshape'], array())."'" : "''"; ?>,
+					<?php
+						if(!empty(wp_kses($settings['slider_setting_arrowshape'], array())))
+						{
+							echo "arrowShape: '".wp_kses($settings['slider_setting_arrowshape'], array())."' ,";
+						}
+					?>
 				});
 			</script>
 
