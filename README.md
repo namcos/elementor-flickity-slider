@@ -3,7 +3,7 @@ Flickity Slider for Elementor
 
 This slider has a heading (named title), an Image which is a background image, a WYSIWYG editor for the text blub and a section for buttons.
 
-- Implemented slider settings are:
+Implemented slider settings are:
 - Draggable
 - Free Scroll
 - Wrap Around
