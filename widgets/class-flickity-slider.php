@@ -443,6 +443,34 @@
 			);
 
 			$this->end_controls_section();
+			
+			$this->start_controls_section(
+				'style_section',
+				[
+					'label' => __('Style', 'elementor-flickity-slider'),
+					'tab' => Controls_Manager::TAB_STYLE,
+				]
+			);
+			
+			$this->add_group_control(
+				\Elementor\Group_Control_Typography::get_type(),
+				[
+					'name' => 'heading_typeography',
+					'label' => __('Heading - Typography', 'elementor-flickity-slider' ),
+					'selector' => '{{WRAPPER}} .heading',
+				]
+			);
+			
+			$this->add_group_control(
+				\Elementor\Group_Control_Typography::get_type(),
+				[
+					'name' => 'text_typeography',
+					'label' => __('Text - Typography', 'elementor-flickity-slider' ),
+					'selector' => '{{WRAPPER}} .text',
+				]
+			);
+			
+			$this->end_controls_section();
 		}
 
 		protected function render()
@@ -460,8 +488,8 @@
 				<div class="carousel-card">
 					<div class="card-image-wrapper">
 						<div class="card-image" style="background: url(<?php echo wp_kses($card['card_image']['url'], array()); ?>) no-repeat; width: 700px; height: 576px;">
-							<p><?php echo wp_kses($card['card_title'], array()); ?></p>
-							<p><?php echo wp_kses($card['card_text'], array()); ?></p>
+							<p class="heading"><?php echo wp_kses($card['card_title'], array()); ?></p>
+							<p class="text"><?php echo wp_kses($card['card_text'], array()); ?></p>
 	<?php
 							if($card['card_button_on'] === 'yes')
 							{
@@ -552,8 +580,8 @@
 					<div class="carousel-card">
 						<div class="card-image-wrapper">
 							<div class="card-image" style="background: url({{{ card.card_image.url }}}) no-repeat; width: 700px; height: 576px;">
-								<p>{{{ card.card_title }}}</p>
-								<p>{{{ card.card_text }}}</p>
+								<p class="heading">{{{ card.card_title }}}</p>
+								<p class="text">{{{ card.card_text }}}</p>
 								
 								<# if(card.card_button_on) { #>
 								<a href="{{{ card.card_button_1_url }}}">{{{ card.card_button_1_text }}}</a>
