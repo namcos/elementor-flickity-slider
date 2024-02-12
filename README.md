@@ -17,7 +17,18 @@ Implemented slider settings are:
 - Drag Threshold
 - Selected Attraction
 - Friction
+- Cell Selector
+- Initial Index - number only
+- Accessibility
+- Set Gallery Size
+- Resize
 - Cell Align
+- Contain
+- Percent Position
+- Right To Left
+- Prev Next Buttons
+- Page Dots
+- Arrow Shape
 
 If you need to amend the slider (perhaps you have slightly different requirements for your slider), you can edit the rendered part by going to widgets/class-flickity-slider.php and 
 updating the render function. To add other controls, update the function _register_controls. The content_template function is for the internal side of elementor (the editor) which is why it's similar to the render function. You may need to update that side to reflect the changes in the front end. Be aware that if you use the <# #> notation, it is based on Underscore JS (https://underscorejs.org/). You can just use php instead.
