@@ -74,17 +74,20 @@
 							'label' => __('Title', 'elementor-flickity-slider'),
 							'type' => Controls_Manager::TEXT,
 							'label_block' => true,
+							'separator' => 'after',
 						],
 						[
 							'name' => 'card_image',
 							'label' => __('Image', 'elementor-flickity-slider'),
 							'type' => Controls_Manager::MEDIA,
 							'default' => [],
+							'separator' => 'after',
 						],
 						[
 							'name' => 'card_text',
 							'label' => __('Text', 'elementor-flickity-slider'),
 							'type' => Controls_Manager::WYSIWYG,
+							'separator' => 'after',
 						],
 						[
 							'name' => 'card_button_on',
@@ -470,6 +473,15 @@
 				]
 			);
 			
+			$this->add_group_control(
+				\Elementor\Group_Control_Typography::get_type(),
+				[
+					'name' => 'button_typeography',
+					'label' => __('Button - Typography', 'elementor-flickity-slider' ),
+					'selector' => '{{WRAPPER}} .button',
+				]
+			);
+			
 			$this->end_controls_section();
 		}
 
@@ -488,16 +500,18 @@
 				<div class="carousel-card">
 					<div class="card-image-wrapper">
 						<div class="card-image" style="background: url(<?php echo wp_kses($card['card_image']['url'], array()); ?>) no-repeat; width: 700px; height: 576px;">
-							<p class="heading"><?php echo wp_kses($card['card_title'], array()); ?></p>
-							<p class="text"><?php echo wp_kses($card['card_text'], array()); ?></p>
-	<?php
-							if($card['card_button_on'] === 'yes')
-							{
+							<div class="text-wrapper">
+								<p class="heading"><?php echo wp_kses($card['card_title'], array()); ?></p>
+								<p class="text"><?php echo wp_kses($card['card_text'], array()); ?></p>
+		<?php
+								if($card['card_button_on'] === 'yes')
+								{
+		?>
+									<a class="button-1 button-1-border" href="<?php echo wp_kses($card['card_button_1_url']['url'], array()); ?>"><?php echo wp_kses($card['card_button_1_text'], array()); ?></a>
+		<?php
+								}
 	?>
-								<a href="<?php echo wp_kses($card['card_button_1_url']['url'], array()); ?>"><?php echo wp_kses($card['card_button_1_text'], array()); ?></a>
-	<?php
-							}
-	?>
+							</div>
 						</div>
 					</div>
 				</div>

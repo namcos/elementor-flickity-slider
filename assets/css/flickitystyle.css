@@ -1,1 +1,29 @@
-// CSS for this widget
+/* CSS for this widget */
+
+.text-wrapper
+{
+	position: absolute;
+    top: 30%;
+    background: rgba(55,55,55,0.5);
+    padding: 0 10px 25px 11px;
+    margin: 0px 10px;
+    left: 0;
+    color: #fff;
+}
+
+.button-1
+{
+	background-color: #ff0000;
+	color: #fff;
+	padding: 15px 20px;
+}
+
+.button-1-border
+{
+	border-radius: 5px;
+}
+
+.card-image
+{
+	padding: 0px 15px;
+}
