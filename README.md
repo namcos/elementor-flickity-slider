@@ -10,8 +10,6 @@ Implemented slider settings are:
 - Group Cells - with number only (no percentage)
 - Auto Play - with milliseconds option
 - Pause Auto Play On Hover
-- Full Screen
-- Fade
 - Adaptive Height
 - Watch CSS
 - Drag Threshold

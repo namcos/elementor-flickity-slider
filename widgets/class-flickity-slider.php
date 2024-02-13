@@ -213,28 +213,6 @@
 				]
 			);
 			
-			$this->add_control('slider_setting_fullscreen',
-				array(
-					'label' => __('Full Screen', 'elementor-flickity-slider'),
-					'type' => Controls_Manager::SWITCHER,
-					'label_on' => __('True', 'elementor-flickity-slider'),
-					'label_off' => __('False', 'elementor-flickity-slider'),
-					'return_value' => 'true',
-					'default' => 'false',
-				)
-			);
-			
-			$this->add_control('slider_setting_fade',
-				array(
-					'label' => __('Fade', 'elementor-flickity-slider'),
-					'type' => Controls_Manager::SWITCHER,
-					'label_on' => __('True', 'elementor-flickity-slider'),
-					'label_off' => __('False', 'elementor-flickity-slider'),
-					'return_value' => 'true',
-					'default' => 'false',
-				)
-			);
-			
 			$this->add_control('slider_setting_adaptiveheight',
 				array(
 					'label' => __('Adaptive Height', 'elementor-flickity-slider'),
@@ -557,8 +535,6 @@
 						}
 					?>
 					pauseAutoPlayOnHover: <?php echo (wp_kses($settings['slider_setting_pauseautoplay'], array()) === 'true') ? 'true' : 'false'; ?>,
-					fullScreen: <?php echo (wp_kses($settings['slider_setting_fullscreen'], array()) === 'true') ? 'true' : 'false'; ?>,
-					fade: <?php echo (wp_kses($settings['slider_setting_fade'], array()) === 'true') ? 'true' : 'false'; ?>,
 					adaptiveHeight: <?php echo (wp_kses($settings['slider_setting_adaptiveheight'], array()) === 'true') ? 'true' : 'false'; ?>,
 					watchCSS: <?php echo (wp_kses($settings['slider_setting_watchcss'], array()) === 'true') ? 'true' : 'false'; ?>,
 					dragThreshold: <?php echo (!empty(wp_kses($settings['slider_setting_dragthreshold'], array()))) ? wp_kses($settings['slider_setting_dragthreshold'], array()) : '3'; ?>,
