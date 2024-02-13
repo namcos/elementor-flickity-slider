@@ -488,12 +488,15 @@
 		protected function render()
 		{
 			$settings = $this->get_settings();
+			
+			// generate a unique id for this block
+			$blockID = uniqid();
 ?>
 			<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 			<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <?php	
-			echo "<div class='carousel'>";
+			echo "<div class='carousel-".$blockID."'>";
 			foreach($settings['cards'] as $card)
 			{
 ?>
@@ -520,7 +523,7 @@
 			echo "</div>";
 ?>
 			<script type="text/javascript">
-				$('.carousel').flickity({
+				$('.carousel-<?php echo $blockID; ?>').flickity({
 					cellAlign: '<?php echo wp_kses($settings['slider_setting_cellalign'], array()); ?>',
 					draggable: <?php echo (wp_kses($settings['slider_setting_draggable'], array()) === 'true') ? 'true' : 'false'; ?>,
 					freeScroll: <?php echo (wp_kses($settings['slider_setting_freescroll'], array()) === 'true') ? 'true' : 'false'; ?>,
