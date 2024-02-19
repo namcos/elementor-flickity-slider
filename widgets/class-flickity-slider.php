@@ -477,10 +477,12 @@
 			echo "<div class='carousel-".$blockID."'>";
 			foreach($settings['cards'] as $card)
 			{
+				$imageSize = wp_getimagesize($card['card_image']['url']);
+				
 ?>
 				<div class="carousel-card">
 					<div class="card-image-wrapper">
-						<div class="card-image" style="background: url(<?php echo wp_kses($card['card_image']['url'], array()); ?>) no-repeat; width: 700px; height: 576px;">
+						<div class="card-image" style="background: url(<?php echo wp_kses($card['card_image']['url'], array()); ?>) no-repeat; width: <?php echo $imageSize[0]; ?>px; height: <?php echo $imageSize[1]; ?>px;">
 							<div class="text-wrapper">
 								<p class="heading"><?php echo wp_kses($card['card_title'], array()); ?></p>
 								<p class="text"><?php echo wp_kses($card['card_text'], array()); ?></p>
