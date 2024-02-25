@@ -1,5 +1,7 @@
 Flickity Slider for Elementor
 =============================
+Author: James Dunn
+Site: http://jamesdunnfreelance.co.uk
 
 This slider has a heading (named title), an Image which is a background image, a WYSIWYG editor for the text blurb and a section for 1 button.
 
