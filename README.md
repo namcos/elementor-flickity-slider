@@ -31,6 +31,8 @@ Implemented slider settings are:
 If you need to amend the slider (perhaps you have slightly different requirements for your slider), you can edit the rendered part by going to widgets/class-flickity-slider.php and 
 updating the render function. To add other controls, update the function _register_controls. The content_template function is for the internal side of elementor (the editor) which is why it's similar to the render function. You may need to update that side to reflect the changes in the front end. Be aware that if you use the <# #> notation, it is based on Underscore JS (https://underscorejs.org/), alternatively you can just use php instead.
 
+There is a css file and a javascript file in the assets folder if you need further modifications.
+
 # Demos
 See here for demos: https://jamesdunnfreelance.co.uk/elementor-flickity-slider-widget/
 
@@ -39,3 +41,5 @@ Copy the elementor-flickity-slider folder into your WordPress plugins directory 
 
 # Warning
 As this is for elementor, be aware that elementor containers may crop the image and you'll have to adjust those.
+
+For now this needs to have allow_url_open set in the PHP INI settings so that wp_getimagesize() can be used.

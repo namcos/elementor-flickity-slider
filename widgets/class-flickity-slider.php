@@ -503,7 +503,6 @@
 			foreach($settings['cards'] as $card)
 			{
 				$imageSize = wp_getimagesize($card['card_image']['url']);
-				
 ?>
 				<div class="carousel-card">
 					<div class="card-image-wrapper">
