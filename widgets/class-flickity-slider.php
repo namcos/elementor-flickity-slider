@@ -61,6 +61,24 @@
 					'label' => __('Cards', 'elementor-flickity-slider'),
 				]
 			);
+			
+			$this->add_control(
+				'carousel_id',
+				[
+					'label' => __('Carousel Id', 'elementor-flickity-slider'),
+					'type' => Controls_Manager::TEXT,
+					'label_block' => true,
+				]
+			);
+			
+			$this->add_control(
+				'carousel_css',
+				[
+					'label' => __('Carousel CSS', 'elementor-flickity-slider'),
+					'type' => Controls_Manager::TEXT,
+					'label_block' => true,
+				]
+			);
 
 			$this->add_control(
 				'cards',
@@ -74,20 +92,17 @@
 							'label' => __('Title', 'elementor-flickity-slider'),
 							'type' => Controls_Manager::TEXT,
 							'label_block' => true,
-							'separator' => 'after',
 						],
 						[
 							'name' => 'card_image',
 							'label' => __('Image', 'elementor-flickity-slider'),
 							'type' => Controls_Manager::MEDIA,
 							'default' => [],
-							'separator' => 'after',
 						],
 						[
 							'name' => 'card_text',
 							'label' => __('Text', 'elementor-flickity-slider'),
 							'type' => Controls_Manager::WYSIWYG,
-							'separator' => 'after',
 						],
 						[
 							'name' => 'card_button_on',
@@ -484,7 +499,7 @@
 			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 			<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <?php	
-			echo "<div class='carousel-".$blockID."'>";
+			echo "<div class='carousel-".$blockID." ".$settings['carousel_css']."' id='".$settings['carousel_id']."'>";
 			foreach($settings['cards'] as $card)
 			{
 				$imageSize = wp_getimagesize($card['card_image']['url']);
