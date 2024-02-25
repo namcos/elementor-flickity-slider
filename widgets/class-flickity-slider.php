@@ -57,9 +57,9 @@
 		protected function _register_controls()
 		{
 			$this->start_controls_section('section_slider_content',
-				array(
+				[
 					'label' => __('Cards', 'elementor-flickity-slider'),
-				)
+				]
 			);
 
 			$this->add_control(
@@ -119,54 +119,54 @@
 			$this->end_controls_section();
 
 			$this->start_controls_section('section_slidersettings_behavior',
-				array(
+				[
 					'label' => __('Slider Settings: Behavior', 'elementor-flickity-slider'),
 					'tab' => Controls_Manager::TAB_CONTENT,
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_draggable',
-				array(
+				[
 					'label' => __('Draggable', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_freescroll',
-				array(
+				[
 					'label' => __('Free Scroll', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_wraparound',
-				array(
+				[
 					'label' => __('Wrap Around', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_groupcells_on',
-				array(
+				[
 					'label' => __('Group Cells...', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_groupcells',
@@ -181,14 +181,14 @@
 			);
 			
 			$this->add_control('slider_setting_autoplay_on',
-				array(
+				[
 					'label' => __('Auto Play...', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_autoplay',
@@ -214,118 +214,118 @@
 			);
 			
 			$this->add_control('slider_setting_adaptiveheight',
-				array(
+				[
 					'label' => __('Adaptive Height', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_watchcss',
-				array(
+				[
 					'label' => __('Watch CSS', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_dragthreshold',
-				array(
+				[
 					'label' => __('Drag Threshold', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::NUMBER,
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_selectedattraction',
-				array(
+				[
 					'label' => __('Selected Attraction', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::TEXT,
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_friction',
-				array(
+				[
 					'label' => __('Friction', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::TEXT,
-				)
+				]
 			);
 			
 			$this->end_controls_section();
 			
 			
 			$this->start_controls_section('section_slidersettings_setup',
-				array(
+				[
 					'label' => __('Slider Settings: Setup', 'elementor-flickity-slider'),
 					'tab' => Controls_Manager::TAB_CONTENT,
-				)
+				]
 			);
 
 			
 			$this->add_control('slider_setting_cellselector',
-				array(
+				[
 					'label' => __('Cell Selector', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::TEXT,
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_initialindex',
-				array(
+				[
 					'label' => __('Initial Index', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::NUMBER,
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_accessibility',
-				array(
+				[
 					'label' => __('Accessibility', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_setgallerysize',
-				array(
+				[
 					'label' => __('Set Gallery Size', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'true',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_resize',
-				array(
+				[
 					'label' => __('Resize', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'true',
-				)
+				]
 			);
 			
 			$this->end_controls_section();
 			
 			
 			$this->start_controls_section('section_slidersettings_cellposition',
-				array(
+				[
 					'label' => __('Slider Settings: Cell Position', 'elementor-flickity-slider'),
 					'tab' => Controls_Manager::TAB_CONTENT,
-				)
+				]
 			);
 
 			$this->add_control('slider_setting_cellalign',
-				array(
+				[
 					'label' => __('Cell Align', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::CHOOSE,
 					'options' =>
@@ -348,79 +348,79 @@
 					],
 					'default' => 'left',
 					'toggle' => true,
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_contain',
-				array(
+				[
 					'label' => __('Contain', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_percentposition',
-				array(
+				[
 					'label' => __('Percent Position', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'true',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_righttoleft',
-				array(
+				[
 					'label' => __('Right To Left', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'false',
-				)
+				]
 			);
 			
 			$this->end_controls_section();
 			
 			
 			$this->start_controls_section('section_slidersettings_ui',
-				array(
+				[
 					'label' => __('Slider Settings: UI', 'elementor-flickity-slider'),
 					'tab' => Controls_Manager::TAB_CONTENT,
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_prevnextbuttons',
-				array(
+				[
 					'label' => __('Prev Next Buttons', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'true',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_pagedots',
-				array(
+				[
 					'label' => __('Page Dots', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::SWITCHER,
 					'label_on' => __('True', 'elementor-flickity-slider'),
 					'label_off' => __('False', 'elementor-flickity-slider'),
 					'return_value' => 'true',
 					'default' => 'true',
-				)
+				]
 			);
 			
 			$this->add_control('slider_setting_arrowshape',
-				array(
+				[
 					'label' => __('Arrow Shape', 'elementor-flickity-slider'),
 					'type' => Controls_Manager::TEXT,
-				)
+				]
 			);
 
 			$this->end_controls_section();
@@ -437,7 +437,7 @@
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'heading_typeography',
-					'label' => __('Heading - Typography', 'elementor-flickity-slider' ),
+					'label' => __('Heading - Typography', 'elementor-flickity-slider'),
 					'selector' => '{{WRAPPER}} .heading',
 				]
 			);
@@ -446,7 +446,7 @@
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'text_typeography',
-					'label' => __('Text - Typography', 'elementor-flickity-slider' ),
+					'label' => __('Text - Typography', 'elementor-flickity-slider'),
 					'selector' => '{{WRAPPER}} .text',
 				]
 			);
@@ -455,8 +455,18 @@
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'button_typeography',
-					'label' => __('Button - Typography', 'elementor-flickity-slider' ),
+					'label' => __('Button - Typography', 'elementor-flickity-slider'),
 					'selector' => '{{WRAPPER}} .button',
+				]
+			);
+			
+			$this->add_control('text-wrapper-background-color',
+				[
+					'name' => 'background_text_wrapper',
+					'label' => __('Color', 'elementor-flickity-slider'),
+					'type' => Controls_Manager::COLOR,
+					'default' => 'rgba(55,55,55,0.5)',
+					'selectors' => ['{{WRAPPER}} .text-wrapper' => 'background-color: {{VALUE}}'],
 				]
 			);
 			
@@ -482,8 +492,9 @@
 ?>
 				<div class="carousel-card">
 					<div class="card-image-wrapper">
-						<div class="card-image" style="background: url(<?php echo wp_kses($card['card_image']['url'], array()); ?>) no-repeat; width: <?php echo $imageSize[0]; ?>px; height: <?php echo $imageSize[1]; ?>px;">
-							<div class="text-wrapper">
+						<!-- <div class="card-image" style="background: url(<?php echo wp_kses($card['card_image']['url'], array()); ?>) no-repeat; width: <?php echo $imageSize[0]; ?>px; height: <?php echo $imageSize[1]; ?>px;"> -->
+						<div class="card-image" style="background: url(<?php echo wp_kses($card['card_image']['url'], array()); ?>) no-repeat; background-size: contain; background-position: center; width: 100%; height: 0; padding-top: calc(<?php echo $imageSize[1]; ?> / <?php echo $imageSize[0]; ?> * 100%);">
+							<!-- <div class="text-wrapper">
 								<p class="heading"><?php echo wp_kses($card['card_title'], array()); ?></p>
 								<p class="text"><?php echo wp_kses($card['card_text'], array()); ?></p>
 		<?php
@@ -494,7 +505,7 @@
 		<?php
 								}
 	?>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -503,61 +514,64 @@
 			echo "</div>";
 ?>
 			<script type="text/javascript">
-				$('.carousel-<?php echo $blockID; ?>').flickity({
-					cellAlign: '<?php echo wp_kses($settings['slider_setting_cellalign'], array()); ?>',
-					draggable: <?php echo (wp_kses($settings['slider_setting_draggable'], array()) === 'true') ? 'true' : 'false'; ?>,
-					freeScroll: <?php echo (wp_kses($settings['slider_setting_freescroll'], array()) === 'true') ? 'true' : 'false'; ?>,
-					wrapAround: <?php echo (wp_kses($settings['slider_setting_wraparound'], array()) === 'true') ? 'true' : 'false'; ?>,
-					<?php
-						if((wp_kses($settings['slider_setting_groupcells_on'], array()) === 'true') && !empty($settings['slider_setting_groupcells']))
-						{
-							echo "groupCells: ".wp_kses($settings['slider_setting_groupcells'], array()).",";
-						}
-						elseif((wp_kses($settings['slider_setting_groupcells_on'], array()) === 'true') && empty($settings['slider_setting_groupcells']))
-						{
-							echo "groupCells: true,";
-						}
-						else
-						{
-							echo "groupCells: false,";
-						}
-					?>
-					<?php
-						if((wp_kses($settings['slider_setting_autoplay_on'], array()) === 'true') && !empty($settings['slider_setting_autoplay']))
-						{
-							echo "autoPlay: ".wp_kses($settings['slider_setting_autoplay'], array()).",";
-						}
-						elseif((wp_kses($settings['slider_setting_autoplay_on'], array()) === 'true') && empty($settings['slider_setting_autoplay']))
-						{
-							echo "autoPlay: true,";
-						}
-						else
-						{
-							echo "autoPlay: false,";
-						}
-					?>
-					pauseAutoPlayOnHover: <?php echo (wp_kses($settings['slider_setting_pauseautoplay'], array()) === 'true') ? 'true' : 'false'; ?>,
-					adaptiveHeight: <?php echo (wp_kses($settings['slider_setting_adaptiveheight'], array()) === 'true') ? 'true' : 'false'; ?>,
-					watchCSS: <?php echo (wp_kses($settings['slider_setting_watchcss'], array()) === 'true') ? 'true' : 'false'; ?>,
-					dragThreshold: <?php echo (!empty(wp_kses($settings['slider_setting_dragthreshold'], array()))) ? wp_kses($settings['slider_setting_dragthreshold'], array()) : '3'; ?>,
-					selectedAttraction: <?php echo (!empty(wp_kses($settings['slider_setting_selectedattraction'], array()))) ? wp_kses($settings['slider_setting_selectedattraction'], array()) : '0.025'; ?>,
-					friction: <?php echo (!empty(wp_kses($settings['slider_setting_friction'], array()))) ? wp_kses($settings['slider_setting_friction'], array()) : '0.28'; ?>,
-					cellSelector: <?php echo (!empty(wp_kses($settings['slider_setting_cellselector'], array()))) ? "'".wp_kses($settings['slider_setting_cellselector'], array())."'" : "''"; ?>,
-					initialIndex: <?php echo (!empty(wp_kses($settings['slider_setting_initialindex'], array()))) ? wp_kses($settings['slider_setting_initialindex'], array()) : 0; ?>,
-					accessibilty: <?php echo (wp_kses($settings['slider_setting_accessibility'], array()) === 'true') ? 'true' : 'false'; ?>,
-					setGallerySize: <?php echo (wp_kses($settings['slider_setting_setgallerysize'], array()) === 'true') ? 'true' : 'false'; ?>,
-					resize: <?php echo (wp_kses($settings['slider_setting_resize'], array()) === 'true') ? 'true' : 'false'; ?>,
-					contain: <?php echo (wp_kses($settings['slider_setting_contain'], array()) === 'true') ? 'true' : 'false'; ?>,
-					percentPosition: <?php echo (wp_kses($settings['slider_setting_percentposition'], array()) === 'true') ? 'true' : 'false'; ?>,
-					rightToLeft: <?php echo (wp_kses($settings['slider_setting_righttoleft'], array()) === 'true') ? 'true' : 'false'; ?>,
-					prevNextButtons: <?php echo (wp_kses($settings['slider_setting_prevnextbuttons'], array()) === 'true') ? 'true' : 'false'; ?>,
-					pageDots: <?php echo (wp_kses($settings['slider_setting_pagedots'], array()) === 'true') ? 'true' : 'false'; ?>,
-					<?php
-						if(!empty(wp_kses($settings['slider_setting_arrowshape'], array())))
-						{
-							echo "arrowShape: '".wp_kses($settings['slider_setting_arrowshape'], array())."' ,";
-						}
-					?>
+				$(document).ready(function()
+				{
+					$('.carousel-<?php echo $blockID; ?>').flickity({
+						cellAlign: '<?php echo wp_kses($settings['slider_setting_cellalign'], array()); ?>',
+						draggable: <?php echo (wp_kses($settings['slider_setting_draggable'], array()) === 'true') ? 'true' : 'false'; ?>,
+						freeScroll: <?php echo (wp_kses($settings['slider_setting_freescroll'], array()) === 'true') ? 'true' : 'false'; ?>,
+						wrapAround: <?php echo (wp_kses($settings['slider_setting_wraparound'], array()) === 'true') ? 'true' : 'false'; ?>,
+						<?php
+							if((wp_kses($settings['slider_setting_groupcells_on'], array()) === 'true') && !empty($settings['slider_setting_groupcells']))
+							{
+								echo "groupCells: ".wp_kses($settings['slider_setting_groupcells'], array()).",";
+							}
+							elseif((wp_kses($settings['slider_setting_groupcells_on'], array()) === 'true') && empty($settings['slider_setting_groupcells']))
+							{
+								echo "groupCells: true,";
+							}
+							else
+							{
+								echo "groupCells: false,";
+							}
+						?>
+						<?php
+							if((wp_kses($settings['slider_setting_autoplay_on'], array()) === 'true') && !empty($settings['slider_setting_autoplay']))
+							{
+								echo "autoPlay: ".wp_kses($settings['slider_setting_autoplay'], array()).",";
+							}
+							elseif((wp_kses($settings['slider_setting_autoplay_on'], array()) === 'true') && empty($settings['slider_setting_autoplay']))
+							{
+								echo "autoPlay: true,";
+							}
+							else
+							{
+								echo "autoPlay: false,";
+							}
+						?>
+						pauseAutoPlayOnHover: <?php echo (wp_kses($settings['slider_setting_pauseautoplay'], array()) === 'true') ? 'true' : 'false'; ?>,
+						adaptiveHeight: <?php echo (wp_kses($settings['slider_setting_adaptiveheight'], array()) === 'true') ? 'true' : 'false'; ?>,
+						watchCSS: <?php echo (wp_kses($settings['slider_setting_watchcss'], array()) === 'true') ? 'true' : 'false'; ?>,
+						dragThreshold: <?php echo (!empty(wp_kses($settings['slider_setting_dragthreshold'], array()))) ? wp_kses($settings['slider_setting_dragthreshold'], array()) : '3'; ?>,
+						selectedAttraction: <?php echo (!empty(wp_kses($settings['slider_setting_selectedattraction'], array()))) ? wp_kses($settings['slider_setting_selectedattraction'], array()) : '0.025'; ?>,
+						friction: <?php echo (!empty(wp_kses($settings['slider_setting_friction'], array()))) ? wp_kses($settings['slider_setting_friction'], array()) : '0.28'; ?>,
+						cellSelector: <?php echo (!empty(wp_kses($settings['slider_setting_cellselector'], array()))) ? "'".wp_kses($settings['slider_setting_cellselector'], array())."'" : "''"; ?>,
+						initialIndex: <?php echo (!empty(wp_kses($settings['slider_setting_initialindex'], array()))) ? wp_kses($settings['slider_setting_initialindex'], array()) : 0; ?>,
+						accessibilty: <?php echo (wp_kses($settings['slider_setting_accessibility'], array()) === 'true') ? 'true' : 'false'; ?>,
+						setGallerySize: <?php echo (wp_kses($settings['slider_setting_setgallerysize'], array()) === 'true') ? 'true' : 'false'; ?>,
+						resize: <?php echo (wp_kses($settings['slider_setting_resize'], array()) === 'true') ? 'true' : 'false'; ?>,
+						contain: <?php echo (wp_kses($settings['slider_setting_contain'], array()) === 'true') ? 'true' : 'false'; ?>,
+						percentPosition: <?php echo (wp_kses($settings['slider_setting_percentposition'], array()) === 'true') ? 'true' : 'false'; ?>,
+						rightToLeft: <?php echo (wp_kses($settings['slider_setting_righttoleft'], array()) === 'true') ? 'true' : 'false'; ?>,
+						prevNextButtons: <?php echo (wp_kses($settings['slider_setting_prevnextbuttons'], array()) === 'true') ? 'true' : 'false'; ?>,
+						pageDots: <?php echo (wp_kses($settings['slider_setting_pagedots'], array()) === 'true') ? 'true' : 'false'; ?>,
+						<?php
+							if(!empty(wp_kses($settings['slider_setting_arrowshape'], array())))
+							{
+								echo "arrowShape: '".wp_kses($settings['slider_setting_arrowshape'], array())."' ,";
+							}
+						?>
+					});
 				});
 			</script>
 <?php

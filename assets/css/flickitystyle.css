@@ -1,10 +1,16 @@
 /* CSS for this widget */
 
+.carousel-card
+{
+	width: 100%;
+	height: auto;
+}
+
 .text-wrapper
 {
 	position: absolute;
     top: 30%;
-    background: rgba(55,55,55,0.5);
+    /*background: rgba(55,55,55,0.5);*/
     padding: 0 10px 25px 11px;
     margin: 0px 10px;
     left: 0;
