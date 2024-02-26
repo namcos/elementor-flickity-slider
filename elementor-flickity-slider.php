@@ -1,9 +1,11 @@
 <?php
 	/**
-	* Elementor Flickity Slider WordPress Plugin
+	* Flickity Slider for Elementor
 	*
 	* @package ElementorFlickitySlider
+	* @author James Dunn
 	*
+	* @wordpress-plugin
 	* Plugin Name: Flickity Slider for Elementor
 	* Plugin URI: https://jamesdunnfreelance.co.uk/elementor-flickity-slider-widget/
 	* Description: Slider widget for Elementor that uses Flickity
