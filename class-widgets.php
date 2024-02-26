@@ -12,6 +12,15 @@
  *             Build Custom Elementor Widgets)
  * @since      1.0.0
  * php version 7.3.9
+ *
+ * @wordpress-plugin
+ * Plugin Name:	Flickity Slider for Elementor
+ * Plugin URI:	https://jamesdunnfreelance.co.uk/elementor-flickity-slider-widget/
+ * Description:	Slider widget for Elementor that uses Flickity
+ * Version:		1.2.1
+ * Author:		James Dunn
+ * Author URI:	https://jamesdunnfreelance.co.uk
+ * Text Domain:	flickity-slider-elementor
  */
 
 namespace ElementorFlickitySlider;

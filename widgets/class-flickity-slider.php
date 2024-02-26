@@ -7,6 +7,15 @@
 	 * @package ElementorFlickitySlider
 	 * @subpackage WordPress
 	 * @author James Dunn
+	 *
+	 * @wordpress-plugin
+	 * Plugin Name:	Flickity Slider for Elementor
+	 * Plugin URI:	https://jamesdunnfreelance.co.uk/elementor-flickity-slider-widget/
+	 * Description:	Slider widget for Elementor that uses Flickity
+	 * Version:		1.2.1
+	 * Author:		James Dunn
+	 * Author URI:	https://jamesdunnfreelance.co.uk
+	 * Text Domain:	flickity-slider-elementor
 	 */
 
 	namespace ElementorFlickitySlider\Widgets;
