@@ -5,10 +5,11 @@
 	* @package ElementorFlickitySlider
 	*
 	* Plugin Name: Flickity Slider for Elementor
-	* Description: Slider widget for Elementor that uses Flickity
 	* Plugin URI: https://jamesdunnfreelance.co.uk/elementor-flickity-slider-widget/
-	* Version: 1.0.0
+	* Description: Slider widget for Elementor that uses Flickity
+	* Version: 1.2.1
 	* Author: James Dunn
+	* Author URI: https://jamesdunnfreelance.co.uk
 	* Text Domain: flickity-slider-elementor
 	*/
 
