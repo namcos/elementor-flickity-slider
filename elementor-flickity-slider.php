@@ -2,14 +2,14 @@
 	/**
 	* Elementor Flickity Slider WordPress Plugin
 	*
-	* @package ElementorCOBubbles
+	* @package ElementorFlickitySlider
 	*
-	* Plugin Name: Elementor Flickity Slider
+	* Plugin Name: Flickity Slider for Elementor
 	* Description: 
 	* Plugin URI:
 	* Version: 1.0.0
 	* Author: James Dunn
-	* Text Domain: elementor-flickity-slider
+	* Text Domain: flickity-slider-elementor
 	*/
 
 	define('ELEMENTOR_FLICKITYSLIDER', __FILE__);
